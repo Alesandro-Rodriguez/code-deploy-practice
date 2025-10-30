@@ -1,4 +1,3 @@
-# this is a test
 name: Deploy to AWS CodeDeploy
 
 on:
