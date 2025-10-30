@@ -14,7 +14,7 @@ files:                  # files to copy from the revision bundle to the instance
 hooks:                  # lifecycle hooks — run scripts at specific deployment phases
   BeforeInstall:        # runs before the application files are copied (used for prep)
     - location: scripts/install_dependencies  # script path inside the bundle to run
-      timeout: 300                         # seconds to wait before aborting the script
+      timeout: 300                         # seconds to wait before aborting the script...
       runas: root                          # user to run the script as on the instance
     - location: scripts/start_server      # additional prep script (note: common pattern is to stop app in ApplicationStop, install deps, then start in AfterInstall/ApplicationStart)
       timeout: 300
